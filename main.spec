@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['D:\\Project_PY\\txt_to_ua\\main.py'],
-             pathex=['D:\\Project_PY\\txt_to_ua'],
+a = Analysis(['main.py'],
+             pathex=['D:\\MyProjects\\Job\\text_opc_ua'],
              binaries=[],
              datas=[],
              hiddenimports=[],

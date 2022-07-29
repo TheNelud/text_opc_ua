@@ -8,11 +8,13 @@ def get_ua_type(value):
     if value.__class__.__name__ == 'int':
         return ua.uatypes.VariantType.Int32
     elif value.__class__.__name__ == 'float':
-        return ua.uatypes.VariantType.Double
+        return ua.uatypes.VariantType.Float
     elif value.__class__.__name__ == 'bool':
         return ua.uatypes.VariantType.Boolean
     elif value.__class__.__name__ == 'str':
         return ua.uatypes.VariantType.String
+    elif value.__class__.__name__ == 'double':
+        return ua.uatypes.VariantType.Float
     else:
         return None
 
